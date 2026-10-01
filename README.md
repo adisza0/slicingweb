@@ -1,5 +1,5 @@
 Website portfolio pribadi yang dibuat untuk tugas praktikum slicing website pada mata kuliah PWEB. Pada portfolio ini, terdapat 3 halaman yaitu portfolio, about, dan contact. Pada halaman portfolio berisi identitas singkat dan tiga pengalaman kepanitiaan yang pernah saya ikuti beberapa tahun terakhir. Pada halaman about berisi profil singkat dan pada halaman contact berisi form untuk menghubungi saya. Website yang saya buat sudah memiliki tampilan responsive di mobile, tablet, dan desktop.
-Live demo: https://adisza0.github.io/slicingweb
+Live demo: https://github.com/adisza0/slicingweb
 
 ![Desktop] (assets/screenshoots/desktop-home-light.png)
 ![Desktop] (assets/screenshoots/desktop-home-dark.png)
