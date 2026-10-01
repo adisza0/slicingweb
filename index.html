@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Playfair+Display:wght@700&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo">thisza</a>
+            
+            <button class="navToggle" id="navToggle" aria-label="Buka menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navbar__menu" id="navMenu">
+                <ul class="navbar__list">
+                    <li><a href="index.html" class="navbar__link navbar__link--active">Portfolio</a></li>
+                    <li><a href="about.html" class="navbar__link">About</a></li>
+                    <li><a href="#contact" class="navbar__link">Contact</a></li>
+                    <li><button class="navbar__link theme-toggle" id="themeToggle" aria-label="Ganti tema">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Adis Zalina Ali</h1>
+                    <p class="hero__description">
+                        Mahasiswa Teknologi Informasi Fakultas Ilmu Komputer Universitas Jember
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#Pengalaman" class="btn btn--primary">Lihat Pengalaman</a>
+                        <a href="about.html" class="btn btn--outline">Tentang Saya</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="assets/images/Hero.jpg" alt="Foto Adis Zalina Ali">
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="Pengalaman">
+            <div class="container">
+                <h2 class="section__title">Pengalaman Kepanitiaan</h2>
+
+                <div class="experience__list">
+
+                    <article class="card">
+                        <div class="card__body">
+                            <h3 class="card__title">Regenerasi Rohis IYOS Smapa 24/25</h3>
+                            <p class="card__text">
+                                Dalam kepanitiaan Regenerasi Rohani Islam "Islamic Youth Of Smapa" SMA Negeri 4 Probolinggo Periode 2024-2025 menjabat sebagai anggota divisi acara yang bertugas menyusun konsep acara, rundown, dan memastikan acara berjalan sesuai rencana dengan lancar
+                            </p>
+                            <a href="#" class="btn btn--outline">Lihat Detail</a>
+                        </div>
+                        <img class="card__image" src="assets/images/iyos.JPG" alt="Dokumentasi">
+                    </article>
+
+                    <article class="card">
+                        <div class="card__body">
+                            <h3 class="card__title">IT Development 9.0</h3>
+                            <p class="card__text">
+                                Dalam kepanitiaan IT Development 9.0 menjabat sebagai anggota divisi humas yang bertugas membuat script dan caption konten serta membagikan broadcast acara kepada peserta
+                            </p>
+                            <a href="#" class="btn btn--outline">Lihat Detail</a>
+                        </div>
+                        <img class="card__image" src="assets/images/itdev.jpg" alt="Dokumentasi">
+                    </article>
+
+                    <article class="card">
+                        <div class="card__body">
+                            <h3 class="card__title">Talk in Tech 6.0</h3>
+                            <p class="card__text">
+                                Dalam kepanitiaan Talk in Tech 6.0 menjabat sebagai anggota divisi sponsorship yang bertugas mencari dan menghubungi sponsor untuk mendukung acara serta memastikan sponsor mendapatkan eksposur yang sesuai dengan kesepakatan
+                            </p>
+                            <a href="#" class="btn btn--outline">Lihat Detail</a>
+                        </div>
+                        <img class="card__image" src="assets/images/tit.jpg" alt="Dokumentasi">
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section__title">Contact me</h2>
+
+                <form class="form" id="contactForm" novalidate>
+                    <div class="form__group">
+                        <label for="name" class="form__label">Nama</label>
+                        <input type="text" id="name" name="name" class="form__input" placeholder="Nama Lengkap">
+                        <small class="form__error" id="nameError"></small>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email" class="form__input" placeholder="nama@gmail.com">
+                        <small class="form__error" id="emailError"></small>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="message" class="form__label">Pesan</label>
+                        <textarea id="message" name="message" class="form__input form__textarea" rows="4" placeholder="Tulis pesan Anda di sini"></textarea>
+                        <small class="form__error" id="messageError"></small>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary">Kirim Pesan</button>
+                    <p class="form__success" id="formSuccess"></p>
+                </form>
+
+                <ul class="social">
+                    <li><a href="https://instagram.com/adiszlnn" class="social__link" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://linkedin.com/in/adiszalinaali" class="social__link" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 AZA. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
